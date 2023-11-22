@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+input {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-200;
+}
+
+input[invalid] {
+  @apply border-red-500;
+  animation: sideToSideInverse 0.3s ease-in-out;
+}
+
+#error {
+  animation: textFadeIn 0.3s ease-in-out !important;
+}
+
+@keyframes sideToSideInverse {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(1%);
+  }
+
+  100% {
+    transform: translateX(-1%);
+  }
+}
+
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

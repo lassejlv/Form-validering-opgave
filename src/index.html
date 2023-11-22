@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/index.css" />
+    <script src="js/index.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Form Validering Opgave</title>
+  </head>
+  <body>
+    <form
+      id="submit-form"
+      class="flex flex-col items-center justify-center min-h-screen"
+    >
+      <div class="mb-2 w-1/2">
+        <label for="name" class="block text-gray-700 text-sm font-bold mb-2"
+          >Fornavn</label
+        >
+        <input type="text" id="fornavn" name="fornavn" />
+      </div>
+
+      <div class="mb-2 w-1/2">
+        <label for="name" class="block text-gray-700 text-sm font-bold mb-2"
+          >Efternavn</label
+        >
+        <input type="text" id="efternavn" name="efternavn" />
+      </div>
+
+      <div class="mb-2 w-1/2">
+        <label for="name" class="block text-gray-700 text-sm font-bold mb-2"
+          >Adresse</label
+        >
+        <input type="text" id="adresse" name="adresse" />
+      </div>
+
+      <div class="mb-2 w-1/2">
+        <label for="name" class="block text-gray-700 text-sm font-bold mb-2"
+          >Postnummer</label
+        >
+        <input type="number" id="postnummer" name="postnummer" />
+      </div>
+
+      <div class="mb-2 w-1/2">
+        <label for="name" class="block text-gray-700 text-sm font-bold mb-2"
+          >Email</label
+        >
+        <input type="email" id="email" name="email" />
+      </div>
+
+      <p class="text-red-500 text-xs italic" id="error"></p>
+
+      <button
+        type="submit"
+        id="submit"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Send
+      </button>
+    </form>
+  </body>
+</html>
